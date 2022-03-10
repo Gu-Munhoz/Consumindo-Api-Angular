@@ -1,16 +1,15 @@
 <table style="width:100%">
     <tr>
-      <th>Codigo</th>
       <th>Imagem</th>   
     </tr> 
 
     <tr *ngFor="let g of cats">
-        <td>{{g.id}}</td>
         <td><img [src]="g.url" ></td>     
       </tr>
 
     <tr *ngFor="let cartas of cards">
-      <td>{{cartas.code}}</td>
-      <td><img [src]="cartas.image" ></td>     
+      <td><img [src]="cartas.image"  ></td>     
     </tr>
   </table>
+
+  <button (click)="GeradorDeck()">Gerador de deck</button>
